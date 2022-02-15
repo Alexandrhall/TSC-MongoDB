@@ -1,0 +1,11 @@
+<h2>Books</h2>
+
+{{#each books}}
+    <p> <a href="/book/{{_id}}">{{title}} ({{pages}})</a> </p>
+{{/each}}
+
+<h2>Loans</h2>
+
+{{#each loans}}
+    <p> <a href="/loan/{{_id}}">{{name}} ({{book.title}})</a> </p>
+{{/each}}

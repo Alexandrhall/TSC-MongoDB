@@ -1,0 +1,11 @@
+<form accept="/createloan" method="post">
+    <input type="text" name="name" placeholder="Name" /><br />
+
+    <select name="book">
+        {{#each books}}
+            <option value="{{_id}}">{{title}}</option>
+        {{/each}}
+    </select><br />
+
+    <input type="submit" value="Save" />
+</form>
